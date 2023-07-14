@@ -15,6 +15,7 @@ body {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  overflow-x: hidden;
   /* NAVIGATION */
   /* END OF NAVIGATION */
   /* Hero */
@@ -42,14 +43,17 @@ body .row {
 }
 body::after {
   position: absolute;
-  right: 0;
+  right: -20%;
+  bottom: -50%;
   bottom: 0;
   content: "";
-  background-image: url(../Assests/pexels-hamza-nouasria-12725050-removebg-preview.png);
+  background-image: url("../Assests/icons8-canvas-student.svg");
   background-repeat: no-repeat;
-  min-width: 300px;
-  height: 300px;
+  min-height: 300px;
+  background-size: cover;
   z-index: -3;
+  width: 600px;
+  filter: blur(2px);
 }
 body header {
   justify-content: space-between;
@@ -89,7 +93,7 @@ body header .primary-list a::before {
   content: "";
   width: 100%;
   height: 100%;
-  background-image: url("../Assests/world-wide-web.png");
+  background-image: url("../Assests/icons8-ryanair.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -170,7 +174,7 @@ body .hero .img span {
   .toggleMenu {
     position: absolute;
     right: 50px;
-    background-image: url("../Assests/pexels-hamza-nouasria-12725050.jpg");
+    background-image: url("../Assests/bars-solid.svg");
     background-repeat: no-repeat;
     background-size: 30px;
     background-position: center;
@@ -181,7 +185,7 @@ body .hero .img span {
   }
   .toggleMenu.active {
     position: fixed;
-    background-image: url("../Assests/pexels-hamza-nouasria-12725050-removebg-preview.png");
+    background-image: url("../Assests/icons8-close.svg");
     background-size: 25px;
   }
   .navigation {
